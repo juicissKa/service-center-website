@@ -1,5 +1,17 @@
 * {
+    font-family: 'Fira Sans Condensed', serif;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
+:root {
+    --color-header-bg: #1B1B1B;
+    --color-logo: #0096FD;
+    --color-one: #2EACDC;
+    --color-two: #03F6FC;
 }
 
 /* HEADER */
@@ -8,6 +20,9 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    background-color: var(--color-header-bg);
+    color: var(--color-logo);
+    font-family: 'Sofia Sans Condensed';
 }
 
 .company-wrapper {
@@ -15,6 +30,27 @@
 }
 
 .logo-wrapper {
-    height: 180px;
-    width: 200px;
+    height: 100%;
+    padding: 20px;
+}
+
+.vertical-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, p, .fa-phone-square {
+    background: -webkit-linear-gradient(315deg, var(--color-one), var(--color-two));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.phone-wrapper {
+    display: flex;
+}
+
+.fa-phone-square {
+    font-size: 45px;
+    padding: 12px;
 }
