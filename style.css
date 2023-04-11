@@ -1,0 +1,20 @@
+* {
+
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.company-wrapper {
+    display: flex;
+}
+
+.logo-wrapper {
+    height: 180px;
+    width: 200px;
+}
