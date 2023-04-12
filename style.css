@@ -121,6 +121,7 @@ body {
     background-color: var(--color-footer-bg);
     color: var(--color-logo);
     font-family: 'Sofia Sans Condensed';
+    font-size: 0.7rem;
 }
 
 .footer-company-wrapper {
@@ -177,4 +178,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    filter:invert(85%) hue-rotate(290deg);
 }
+
