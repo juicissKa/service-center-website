@@ -193,6 +193,17 @@ nav a:focus::after {
     background-position: 0 0;
 }
 
+/* QUALITIES */
+
+.qualities-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.quality {
+
+}
+
 /* FOOTER */
 
 .footer {
