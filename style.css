@@ -166,6 +166,7 @@ body {
 .logo-footer-wrapper {
     height: 100%;
     padding: 20px;
+    position: right;
 }
 
 .icon-footer-wrapper {
