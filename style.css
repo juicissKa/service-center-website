@@ -41,12 +41,13 @@ body {
 .header {
     background-color: var(--color-header-bg);
     color: var(--color-logo);
-    font-family: 'Sofia Sans Condensed';
+    font-family: 'Fira Sans Condensed';
     z-index: 9;
     position: absolute;
     top: 0;
     width: 100%;
     /* opacity: 0.8; */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .header .content {
@@ -125,10 +126,25 @@ nav a:focus::after {
 .main-section {
     height: 100%;
     width: 100%;
-    background-color: var(--color-bg);
+    background-color: var(--color-main);
     z-index: 1;
     width: 100%;
     height: 100vh;
+
+    background-image: url("src/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.main-section .text-wrapper {
+    max-width: 600px;
+}
+
+.main-section .pic-wrapper {
+    height: 600px;
+    width: 600px;
 }
 
 .filter {
@@ -147,11 +163,43 @@ nav a:focus::after {
 .main-section .text-wrapper {
     height: 100%;
     color: var(--color-text);
+}
+
+.main-section .text-wrapper h1 {
     font-size: 3rem;
 }
 
+.main-section .text-wrapper p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-align: justify;
+}
 
-.pic-bg {
+.main-section .text-wrapper hr {
+    margin-top: 10px;
+}
+
+.main-section .price-button {
+    display: block;
+    margin-top: 20px;
+    width: 250px;
+    height: 50px;
+    text-align: left;
+    padding-left: 20px;
+    background: -webkit-linear-gradient(0deg, var(--color-logo), var(--color-one));
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    color: var(--color-text);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+    transition: background-position .5s;
+    border-radius: 7px;
+}
+
+.main-section .price-button:hover {
+    background-position: 0 0;
 }
 
 /* FOOTER */
