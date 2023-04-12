@@ -147,15 +147,6 @@ nav a:focus::after {
     width: 600px;
 }
 
-.filter {
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(3px);
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
 .main-section .content {
     height: 100%;
 }
