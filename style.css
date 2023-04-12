@@ -15,7 +15,7 @@
     --color-text: #F5F0F6;
     --color-bg: #282828;
     --color-main: #14161C;
-    --color-footer-bg: #FFFFFF;
+    --color-footer-bg: #1b1b1b;
 }
 
 body {
@@ -112,7 +112,7 @@ body {
 .pic-bg {
 }
 
-/* footer */
+/* FOOTER */
 
 .footer {
     width: 100%;
@@ -134,7 +134,7 @@ body {
 }
 
 .fa-vk {
-    font-size: 45px;
+    font-size: 35px;
     padding: 12px;
 }
 
@@ -144,8 +144,21 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+/* ENVELOPE = mail */
+
 .fa-square-envelope {
-    font-size: 45px;
+    font-size: 35px;
+    padding: 12px;
+}
+
+.footer h1, .footer .fa-phone-square {
+    background: -webkit-linear-gradient(315deg, var(--color-one), var(--color-two));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-phone-square {
+    font-size: 35px;
     padding: 12px;
 }
 
@@ -156,4 +169,12 @@ body {
 
 .icon-footer-wrapper {
     display: flex;
+}
+
+/* YANDEX MAPS SECTION */
+
+.yandex-map {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
