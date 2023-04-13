@@ -196,12 +196,52 @@ nav a:focus::after {
 /* QUALITIES */
 
 .qualities-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.qualities-section .content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 100px;
 }
 
 .quality {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: row;
+    max-width: 400px;
+    background-color: var(--color-bg);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+    height: 100%;
+}
 
+.quality .text-wrapper {
+    padding-left: 15px;
+}
+
+.quality .text-wrapper h1 {
+    font-size: 1.5rem;
+}
+
+.quality .text-wrapper p {
+    font-size: 1rem;
+}
+
+/* QUALITY ANIMATION */
+
+.quality-animation {
+    animation: wipe-enter 2s 1
+}
+@keyframes wipe-enter {
+    0% {
+        opacity: 0;
+    }
 }
 
 /* FOOTER */
