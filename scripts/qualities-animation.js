@@ -1,5 +1,6 @@
 (function () {
     var qualities = document.querySelectorAll('.quality');
+    var prices = document.querySelectorAll('.price-table');
   
     var observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -14,4 +15,5 @@
     });
     
     qualities.forEach(quality => observer.observe(quality));
+    prices.forEach(price => observer.observe(price));
   })();
