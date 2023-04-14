@@ -384,7 +384,7 @@ nav a:focus::after {
 
     text-align: center;
 
-    background: -webkit-linear-gradient(315deg, var(--color-one), var(--color-two));
+    background: -webkit-linear-gradient(315deg, var(--color-logo), var(--color-one));
 
     border-radius: 50%;
 }
