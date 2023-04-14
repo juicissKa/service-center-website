@@ -331,6 +331,71 @@ nav a:focus::after {
     background-color: #222222;
 }
 
+
+/* WORK-DESC SECTION */
+
+.work-desc-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.work-desc-section .content {
+    flex-direction: column;
+    width: 100%;
+}
+
+.work-desc-section .content h1 {
+    font-size: 2rem;
+}
+
+.work-desc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.work-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-step .text-wrapper {
+    text-align: center;
+}
+
+.work-step .text-wrapper h1 {
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+
+.round {
+    color: var(--color-text);
+    font-size: 50px;
+    font-weight: bold;
+
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+
+    text-align: center;
+
+    background: -webkit-linear-gradient(315deg, var(--color-one), var(--color-two));
+
+    border-radius: 50%;
+}
+
+.number {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* FOOTER */
 
 .footer {
