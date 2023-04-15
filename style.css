@@ -346,15 +346,15 @@ nav a:focus::after {
 }
 
 .work-desc-section .content h1 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .work-desc {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .work-step {
