@@ -12,14 +12,15 @@
         href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"
         />
         <link type="image/x-icon" href="src/favicon.ico" rel="icon">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     </head>
     <body>
 
         <header class="header">
             <div class="content">
-                <div class="logo-wrapper vertical-centered">
-                    <!-- <img class="logo" src="src/logo_cringe.png" height="40px" width="100px"> -->
-                </div>
+                <!-- <div class="logo-wrapper vertical-centered">
+                     <img class="logo" src="src/logo_cringe.png" height="40px" width="100px">
+                </div> -->
                 <div class="nav-wrapper vertical-centered">
                     <nav class="nav">
                         <a href="#main-section">Главная</a>
@@ -28,6 +29,26 @@
                         <a href="#yandex-maps-section">Карты</a>
                         <a href="#footer">Контакты</a>
                     </nav>
+                    <div class="menu-block">
+                        <span class="menu-btn">
+                            <div class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="cross">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </span>
+                        <ul class="menu-nav">
+                            <a href="#main-section">Главная</a>
+                            <a href="#price-section">Цены</a>
+                            <a href="#work-desc-section">Заказ</a>
+                            <a href="#yandex-maps-section">Карты</a>
+                            <a href="#footer">Контакты</a>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -294,5 +315,6 @@
             </div>
         </footer>
         <script src="scripts/qualities-animation.js"></script>
+        <script src="scripts/menu.js"></script>
     </body>
 </html>
