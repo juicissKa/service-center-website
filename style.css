@@ -42,6 +42,12 @@ h1, p {
     color: var(--color-text);
 }
 
+.gradient-text, .menu-nav a, .nav a, .price, .footer h1, .fa, .phone-wrapper .text-wrapper a {
+    background: -webkit-linear-gradient(315deg, var(--color-one), var(--color-two));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* MENU BUTTON */
 
 .menu-block {
@@ -65,10 +71,6 @@ h1, p {
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-
-    background: -webkit-linear-gradient(315deg, var(--color-logo), var(--color-one));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
     font-size: 1.5rem;
 
@@ -224,10 +226,6 @@ h1, p {
     overflow: hidden;
     font-weight: bold;
 
-    background: -webkit-linear-gradient(315deg, var(--color-one), var(--color-two));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
     display: block;
     position: relative;
     padding: 0.2em 0;
@@ -253,15 +251,6 @@ nav a:hover::after,
 nav a:focus::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
-
-.phone-wrapper {
-    display: flex;
-}
-
-.fa-phone-square {
-    font-size: 45px;
-    padding: 12px;
 }
 
 
@@ -454,10 +443,6 @@ nav a:focus::after {
 }
 
 .price {
-    background: -webkit-linear-gradient(315deg, var(--color-one), var(--color-two));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
     font-weight: bold;
 }
 
@@ -532,6 +517,10 @@ nav a:focus::after {
 
 /* FOOTER */
 
+.phone-wrapper {
+    display: flex;
+}
+
 .footer {
     width: 100%;
     display: flex;
@@ -539,58 +528,41 @@ nav a:focus::after {
     background-color: var(--color-footer-bg);
     color: var(--color-logo);
     font-family: 'Sofia Sans Condensed';
-    font-size: 0.7rem;
     font-size: 1rem;
 }
 
-.footer-company-wrapper {
-    display: flex;
+.policy-wrapper a {
+    color: var(--color-text);
+    font-size: 1.5rem;
 }
 
-.footer h1, .footer .fa-vk {
-    background: -webkit-linear-gradient(315deg, var(--color-one), var(--color-two));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.fa-vk {
-    font-size: 35px;
-    padding: 12px;
-}
-
-.footer h1, .footer .fa-square-envelope {
-    background: -webkit-linear-gradient(315deg, var(--color-one), var(--color-two));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.contacts-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* ENVELOPE = mail */
 
-.fa-square-envelope {
+.phone-icon-wrapper {
     font-size: 35px;
     padding: 12px;
+    
 }
 
-.footer h1, .footer .fa-phone-square {
-    background: -webkit-linear-gradient(315deg, var(--color-one), var(--color-two));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.logo {
+    align-self: center;
 }
 
-.fa-phone-square {
-    font-size: 35px;
-    padding: 12px;
+.phone-wrapper .text-wrapper h1 {
+    font-size: 2rem;
 }
 
-.logo-footer-wrapper {
-    height: 100%;
-    padding: 20px;
-    position: right;
+.phone-wrapper .text-wrapper a {
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.icon-footer-wrapper {
-    display: flex;
-}
 
 /* YANDEX MAPS SECTION */
 
@@ -613,12 +585,36 @@ nav a:focus::after {
     .nav-wrapper {
         grid-column: 4 / 12;
     }
+
+    .contacts-wrapper {
+        grid-template-columns: 1fr;
+    }
     
 }
 
 @media screen and (max-width: 880px) { 
     .main-section .content .pic-wrapper {
         display: none;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .phone-wrapper {    
+        margin-top: 10px;
+    }
+    .logo {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .policy-wrapper {
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 }
 
