@@ -563,6 +563,10 @@ nav a:focus::after {
     font-weight: bold;
 }
 
+.policy-wrapper a {
+    font-size: 1.25rem;
+}
+
 
 /* YANDEX MAPS SECTION */
 
